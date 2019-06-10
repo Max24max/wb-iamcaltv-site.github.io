@@ -1,1 +1,35 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Password Protected Page</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<iframe id="contentFrame" frameBorder="0" allowfullscreen></iframe>
+<div id="dialogWrap">
+  <div id="dialogWrapCell">
+    <div id="mainDialog">
+      <div id="dialogText">This page is password protected.</div>
+      <div id="passArea">
+        <p id="passwordPrompt">Password</p>
+        <input id="pass" type="password" name="pass">
+        <div>
+          <span id="messageWrapper">
+            <span id="invalidPass" class="notifyText">Sorry, please try again.</span>
+            <span id="success" class="notifyText">Success!</span>
+          </span>
+          <button id="submitPass" type="button">Submit</button>
+          <div style="clear: both;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="js/cryptojs/3.1.2/crypto.js"></script>
+<script src="js/srcdoc-polyfill/0.1.1/srcdoc-polyfill.js"></script>
+<script src="js/protect/0.0.1/protect.js"></script>
+</body>
+</html>
